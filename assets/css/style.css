@@ -1,0 +1,434 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(241, 241, 241);
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: url("/assets/images/travelfusion.jpg") no-repeat center center;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container_one {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.shade_out {
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 45, 45, 0.404);
+}
+
+/* html symbols */
+
+.sym {
+  font-size: 20px;
+  color: #fff;
+}
+
+.continuous_circle--symbol,
+.rocket--symbol,
+.star--symbol {
+  color: orange;
+  font-size: 42px;
+}
+
+.search--symbol {
+  color: #000;
+  font-size: 32px;
+}
+
+/* navigation bar styles */
+#top-focus {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 24px 0 24px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+}
+
+nav > ul {
+  flex: 0.9;
+  display: inline-flex;
+  list-style: none;
+}
+
+.navbarList__item,
+nav > p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.navbarList__item--pl {
+  padding-left: 18px;
+}
+
+/* styles for content beneath top-focus navigation bar */
+
+#top-focus > div {
+  padding: 200px 0 16px 0;
+  text-align: center;
+}
+
+#watch_word,
+#brand {
+  color: #fff;
+}
+
+#brand {
+  letter-spacing: 2.5px;
+}
+
+.action_btn {
+  background: orange;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px 32px 10px 32px;
+  outline: none;
+  border: 0;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* styles for watch_intro */
+#watch_intro {
+  width: 140px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin: 250px 0 0 190px;
+}
+
+#watchIntro__play_btn {
+  padding: 10px 10px 10px 10px;
+  border-radius: 100px;
+  min-width: 60px;
+  height: 60px;
+  border: 2px solid #fff;
+  text-align: center;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+#watchIntro__watch_text {
+  align-self: center;
+}
+
+#watchIntro__watch_text > p {
+  font-size: 14px;
+}
+
+/* styles for fusion_welcome */
+#fusion_welcome {
+  padding-bottom: 200px;
+  border-bottom: 2px solid rgb(236, 236, 236);
+}
+
+#fusionWelcome_wrap_one {
+  text-align: center;
+}
+
+#fusionWelcome_wrap_one > h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  letter-spacing: 2.2px;
+}
+
+#fusionWelcome__wrap_two {
+  margin: 200px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fusionWelcomeWrapTwo__card {
+  flex: 1;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  padding: 16px 15px 16px 15px;
+  border: 0.3px solid rgba(0, 0, 0, 0.027);
+}
+
+.fusionWelcomeWrapTwo__card h4 {
+  margin: 10px 0;
+}
+
+.fusionWelcomeWrapTwo__card--active {
+  box-shadow: 2px 4px 11px 5px rgba(82, 82, 82, 0.089);
+}
+
+/* Styles for find_destination */
+.sectionize {
+  padding: 100px 0 100px 0;
+  border-bottom: 2px solid rgb(236, 236, 236);
+}
+
+#clientWords__header,
+#blog_news_header,
+#findDestinationWrapOne__header {
+  text-align: center;
+}
+
+input#id_find_destination {
+  background: #eee;
+}
+
+#clientWords__header > h2,
+#blog_news_header > h2,
+#findDestinationWrapOne__header > h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 2.2px;
+}
+
+#findDestinationWrapOne__header > p {
+  font-weight: 600;
+}
+
+#findDestinationWrapOne__header > div {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+#id_find_destination {
+  border: 0;
+  outline-color: orange;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 4px 0 4px 8px;
+  margin-left: 8px;
+}
+
+#findDestinationWrapOne__body {
+  margin-top: 80px;
+}
+
+#findDestinationWrapOneBody__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 320px;
+  grid-gap: 42px;
+}
+
+.findDestinationWrapOneBodyGrid__item {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  padding-top: 32px;
+  font-size: 24px;
+}
+
+#findDestinationWrapOneBody__grid > #item_one {
+  background: url("/assets/images/fusiontravel.jpg") no-repeat left bottom;
+  object-fit: cover;
+}
+
+#findDestinationWrapOneBody__grid > #item_two {
+  background: url("/assets/images/travel.jpg") no-repeat bottom center;
+  object-fit: cover;
+}
+
+#findDestinationWrapOneBody__grid > #item_three {
+  background: url("/assets/images/travelfusion.jpg") no-repeat left center;
+  object-fit: cover;
+}
+
+#findDestinationWrapOneBody__grid > #item_four {
+  background: url("/assets/images/fusionluxury.jpg") no-repeat right center;
+  object-fit: cover;
+}
+
+#findDestinationWrapOneBody__grid > #item_five {
+  background: url("/assets/images/travelfusion.jpg") no-repeat left bottom;
+  object-fit: cover;
+}
+
+#findDestinationWrapOneBody__grid > #item_six {
+  background: url("/assets/images/travel.jpg") no-repeat left bottom;
+  object-fit: cover;
+}
+
+/* styles for blog_news */
+#blog_post_wrapper {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 0.4fr 0.25fr 0.25fr;
+  grid-column-gap: 20px;
+  grid-gap: 16px;
+  justify-content: space-between;
+}
+
+#keep_reading_btn_wrap {
+  margin-top: 80px;
+  text-align: center;
+}
+
+#blogPostWrapper__col_two,
+#blogPostWrapper__col_one {
+  display: grid;
+  grid-template-rows: 320px;
+  grid-row-gap: 60px;
+}
+
+#blogPostWrapper__col_three {
+  display: grid;
+  grid-template-rows: 180px 1fr;
+  grid-row-gap: 60px;
+}
+
+#blogPostWrapperColOne__top img {
+  width: 100%;
+  height: 320px;
+}
+
+.txtD_imgU_post_wrap {
+  border: 0.5px solid #eee;
+}
+
+#txtL_imgR_post_wrap {
+  display: flex;
+  border: 0.5px solid #eee;
+}
+
+.txtD_imgU_postWrap__content,
+#txtL_imgR_postWrap__content {
+  flex: 0.7;
+  padding: 10px;
+}
+
+.txtD_imgU_postWrap__content > h5,
+#txtL_imgR_postWrap__content > h5 {
+  padding-bottom: 10px;
+}
+
+.txtD_imgU_postWrap__content > p,
+#txtL_imgR_postWrap__content > p {
+  font-size: 16px;
+}
+
+#txtL_imgR_postWrap__img {
+  flex: 0.8;
+}
+
+.txtD_imgU_postWrap__img > img,
+#txtL_imgR_postWrap__img > img {
+  height: 100%;
+  width: 100%;
+}
+
+#blogPostWrapperColThree_top img,
+#blogPostWrapperColTwo__bottom > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* styles for client_words */
+#client_words {
+  border-bottom: none;
+}
+
+#clientWords__body {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+#clientWords__wrapper {
+  display: flex;
+  width: 800px;
+  padding: 40px;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#clientWords__wrapper > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  margin-right: 18px;
+}
+
+#clientWords__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#client_info > h5 {
+  color: orange;
+}
+
+#client_info > p {
+  font-size: 14px;
+}
+
+/* styles for container_two */
+
+#container_two {
+  margin-top: 60px;
+  background: orange;
+}
+
+#containerTwo__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  max-width: 1800px;
+  margin: 0 auto;
+  height: 150px;
+}
+
+#containerTwo__wrapper .action_btn {
+  border: 1px solid #fff;
+}
+
+/* styles for footer */
+
+footer {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-column-gap: 30px; */
+  justify-content: space-between;
+}
+
+footer a,
+footer p {
+  font-size: 13px;
+  color: rgb(148, 148, 148);
+  line-height: 22px;
+}
+
+footer section h5 {
+  padding-bottom: 10px;
+}
