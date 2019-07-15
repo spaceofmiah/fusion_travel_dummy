@@ -271,7 +271,7 @@ input#id_find_destination {
 }
 
 #findDestinationWrapOneBody__grid > #item_six {
-  background: url("/assets/images/travel.jpg") no-repeat left bottom;
+  background: url("../images/travel.jpg") no-repeat left bottom;
   object-fit: cover;
 }
 
