@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background: url("/assets/images/travelfusion.jpg") no-repeat center center;
+  background: url("../images/travelfusion.jpg") no-repeat center center;
   object-fit: cover;
   height: 100vh;
   width: 100%;
@@ -246,27 +246,27 @@ input#id_find_destination {
 }
 
 #findDestinationWrapOneBody__grid > #item_one {
-  background: url("/assets/images/fusiontravel.jpg") no-repeat left bottom;
+  background: url("../images/fusiontravel.jpg") no-repeat left bottom;
   object-fit: cover;
 }
 
 #findDestinationWrapOneBody__grid > #item_two {
-  background: url("/assets/images/travel.jpg") no-repeat bottom center;
+  background: url("../images/travel.jpg") no-repeat bottom center;
   object-fit: cover;
 }
 
 #findDestinationWrapOneBody__grid > #item_three {
-  background: url("/assets/images/travelfusion.jpg") no-repeat left center;
+  background: url("../images/travelfusion.jpg") no-repeat left center;
   object-fit: cover;
 }
 
 #findDestinationWrapOneBody__grid > #item_four {
-  background: url("/assets/images/fusionluxury.jpg") no-repeat right center;
+  background: url("../images/fusionluxury.jpg") no-repeat right center;
   object-fit: cover;
 }
 
 #findDestinationWrapOneBody__grid > #item_five {
-  background: url("/assets/images/travelfusion.jpg") no-repeat left bottom;
+  background: url("../images/travelfusion.jpg") no-repeat left bottom;
   object-fit: cover;
 }
 
