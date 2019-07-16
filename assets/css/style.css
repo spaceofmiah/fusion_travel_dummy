@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Nunito";
+  src: url('../fonts/Nunito.ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +12,7 @@
 body {
   background: rgb(241, 241, 241);
   font-size: 18px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Nunito"
 }
 
 header {
@@ -258,10 +263,6 @@ input#id_find_destination {
   font-size: 32px;
   margin-bottom: 10px;
   letter-spacing: 2.2px;
-}
-
-#findDestinationWrapOne__header > p {
-  font-weight: 600;
 }
 
 #findDestinationWrapOne__header > div {
