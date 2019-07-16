@@ -63,7 +63,7 @@ a {
 }
 
 nav {
-  padding: 24px 0 24px 0;
+  padding: 24px 10px 24px 10px;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #fff;
@@ -96,6 +96,7 @@ nav > p {
     padding: 0 18px;
     color: #eee;
     font-weight: 500;
+    line-height: 16px;
   }
 
   .navbarList__item a {
@@ -131,6 +132,12 @@ nav > p {
   cursor: pointer;
 }
 
+@media (min-width: 320px) and (max-width: 620px) {
+  #top-focus > div {
+    padding-top: 160px;
+  }
+}
+
 /* styles for watch_intro */
 #watch_intro {
   width: 140px;
@@ -160,6 +167,18 @@ nav > p {
   font-size: 14px;
 }
 
+@media (min-width: 320px) and (max-width: 420px) {
+  #watch_intro {
+    margin: 100px 0 0 10px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 720px) {
+  #watch_intro {
+    margin: 200px 0 0 220px;
+  }
+}
+
 /* styles for fusion_welcome */
 #fusion_welcome {
   padding-bottom: 200px;
@@ -168,6 +187,7 @@ nav > p {
 
 #fusionWelcome_wrap_one {
   text-align: center;
+  padding: 10px;
 }
 
 #fusionWelcome_wrap_one > h2 {
@@ -186,7 +206,6 @@ nav > p {
 .fusionWelcomeWrapTwo__card {
   flex: 1;
   width: 100%;
-  height: 300px;
   border-radius: 10px;
   padding: 16px 15px 16px 15px;
   border: 0.3px solid rgba(0, 0, 0, 0.027);
@@ -198,6 +217,22 @@ nav > p {
 
 .fusionWelcomeWrapTwo__card--active {
   box-shadow: 2px 4px 11px 5px rgba(82, 82, 82, 0.089);
+}
+
+@media (max-width: 620px) {
+  #fusion_welcome {
+    padding-bottom: 130px;
+  }
+
+  #fusionWelcome__wrap_two {
+    padding: 20px;
+    margin-top: 120px;
+  }
+
+  .fusionWelcomeWrapTwo__card {
+    flex: initial;
+    margin: 16px 0;
+  }
 }
 
 /* Styles for find_destination */
@@ -253,6 +288,7 @@ input#id_find_destination {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 320px;
   grid-gap: 42px;
+  padding: 8px;
 }
 
 .findDestinationWrapOneBodyGrid__item {
@@ -291,6 +327,13 @@ input#id_find_destination {
 #findDestinationWrapOneBody__grid > #item_six {
   background: url("../images/travel.jpg") no-repeat left bottom;
   object-fit: cover;
+}
+
+@media (max-width: 720px) {
+  #findDestinationWrapOneBody__grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
+  }
 }
 
 /* styles for blog_news */
@@ -367,6 +410,19 @@ input#id_find_destination {
   height: 100%;
 }
 
+@media (max-width: 920px) {
+  #blogPostWrapperColThree_top,
+  #blogPostWrapperColTwo__bottom {
+    display: none;
+  }
+
+  #blog_post_wrapper {
+    grid-template-columns: 1fr;
+    padding: 8px;
+    grid-gap: 50px;
+  }
+}
+
 /* styles for client_words */
 #client_words {
   border-bottom: none;
@@ -408,6 +464,30 @@ input#id_find_destination {
   font-size: 14px;
 }
 
+@media (max-width: 720px) {
+  #clientWords__body {
+    margin: 60px 10px;
+  }
+
+  #clientWords__wrapper {
+    flex-direction: column;
+    padding: 20px 8px;
+    text-align: center;
+  }
+
+  #clientWords__wrapper > img {
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    margin: 0 0 25px 0;
+    align-self: center;
+  }
+
+  #client_info {
+    margin-top: 24px;
+  }
+}
+
 /* styles for container_two */
 
 #container_two {
@@ -427,6 +507,12 @@ input#id_find_destination {
 
 #containerTwo__wrapper .action_btn {
   border: 1px solid #fff;
+}
+
+@media (max-width: 720px) {
+  #containerTwo__wrapper {
+    flex-direction: column;
+  }
 }
 
 /* styles for footer */
@@ -465,4 +551,15 @@ footer #social_link a {
 footer #copyright {
   text-align: center;
   margin-top: 16px;
+}
+
+@media (max-width: 720px) {
+  footer {
+    padding: 0 8px 44px 8px;
+  }
+
+  #footer_content {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 18px;
+  }
 }
