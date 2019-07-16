@@ -75,7 +75,7 @@ nav > ul {
   list-style: none;
 }
 
-.navbarList__item,
+.navbarList__item a,
 nav > p {
   color: #fff;
   font-size: 16px;
@@ -83,6 +83,24 @@ nav > p {
 
 .navbarList__item--pl {
   padding-left: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  nav {
+    overflow-x: scroll;
+    text-align: center;
+  }
+
+  nav > p,
+  .navbarList__item {
+    padding: 0 18px;
+    color: #eee;
+    font-weight: 500;
+  }
+
+  .navbarList__item a {
+    font-size: 14px;
+  }
 }
 
 /* styles for content beneath top-focus navigation bar */
