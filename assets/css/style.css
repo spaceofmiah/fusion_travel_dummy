@@ -13,6 +13,7 @@ body {
 header {
   background: url("../images/travelfusion.jpg") no-repeat center center;
   object-fit: cover;
+  background-size: cover;
   height: 100vh;
   width: 100%;
 }
